@@ -44,3 +44,22 @@ footer {
         text-align: center;
     }
 }
+.fixed-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: background-color 0.3s;
+  }
+  
+  .fixed-contact:hover {
+    background-color: #0056b3;
+  }
+  
