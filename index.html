@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Hind Cool Service</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('img/home1.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('img/home2.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('img/home3.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar {
+        /* color: #030303 !important;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        border-radius: 1rem;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border: 6px solid #fecd1a;
+        margin-top: -1rem;
+        padding: 10px;
+        margin-left: -5px;
+        margin-right: -5px;
+        background-color: white; */
+        margin-top: -9px;
+        overflow: hidden;
+        border-bottom: 6px solid #fecd1a;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+      }
+      .nav-link {
+        color: #030303 !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="">
+          <strong>Hind Cool Service</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarExample">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#introCarousel">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav list-inline">
+            <!-- Icons -->
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="https://script.google.com/macros/s/AKfycbyvXkOzUkNexMb1odUP9onViuzKeSOSvhcBZukGbwfeBK0IPOLDqAKYCkZmQBJVOGuPOQ/exec">
+                Login
+              </a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">WE PROVIDE</h1>
+                <h1 class="mb-4">PROFESSIONAL</h1>
+                <h1 class="mb-4">SERVICES</h1>
+                <p>We offer services for AC repair, AC cleaning, installation and removal, freon refilling, and more.</p>
+                <a href="tel:7408381814">
+                  <button>CONTACT US</button>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">BEST</h1>
+                <h1 class="mb-4">PROFESSIONAL</h1>
+                <h1 class="mb-4">SERVICES</h1>
+                <p>We provide services for AC repair, AC cleaning, installation and removal, freon refilling, and more</p>
+                <a href="#about"><button>LEARN MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">BEST</h1>
+                <h1 class="mb-4">PROFESSIONAL</h1>
+                <h1 class="mb-4">SERVICES</h1>
+                <p>We offer services for AC repair, AC cleaning, installation and removal, freon refilling, and more.</p>
+                <a href="#service"><button>SERVICE MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <!-- <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section id="about">
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="img/about.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>AC COOL SERVICE</strong></h4>
+            <p class="text-muted">
+              ACREPAIR Service is a business engaged in providing AC and refrigerator repair services, including cleaning, installation, and removal, in the Mumbai area and its surroundings.
+            </p>
+            <p><strong>Services?</strong></p>
+            <p class="text-muted">
+              Starting from the customers' need for honest, trustworthy, and reliable air conditioner (AC) service, we are here to fulfill that need. Supported by experienced technicians and nationally standardized equipment, we are committed to delivering excellent service quality to all our customers across various sectors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <div class="container">
+
+      <!--Section: Testimonials v.3-->
+      <section id="testimonials" class="team-section mt-2 mb-5">
+
+          <!--Secion heading-->
+          <div class="row mt-5 mb-4">
+            <div class="col-md-12">
+              <div class="divider-new">
+                <h3 class="text-center text-uppercase font-weight-bold mr-3 ml-3 wow fadeIn" data-wow-delay="0.2s">Testimonials</h3>
+              </div>
+            </div>
+            <!--/Secion heading-->
+
+            <!--Section description-->
+            <p class="text-center grey-text w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">Here are testimonials from customers who have used the AC services on this website.
+
+            </p>
+
+            <!--First row-->
+            <div class="row text-center">
+
+              <!--First column-->
+              <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
+
+                <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto mb-4 ">
+                    <img style="height: 250px;" src="https://scontent.fbom19-3.fna.fbcdn.net/v/t39.30808-6/470136681_1111003341030901_1046911760196381428_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Ey59lXqynLIQ7kNvwFM9cuM&_nc_oc=AdnXu62LydpK5gG79v2N24Ek_WhpOwUFyhDsfN8u5SKfiQt5RAfTT7b0ZiLbHtTrfDNkX1SHD3-dggtGd0BEN6aK&_nc_zt=23&_nc_ht=scontent.fbom19-3.fna&_nc_gid=2LX8MR5O4cHOorQTlZr6HQ&oh=00_AfLNm0iAaPJXR3RcmRf7Lqlw13MMu_Px-qw0aOXHiqkhmg&oe=68250C1E" class="rounded-circle img-fluid z-depth-1-half">
+                  </div>
+
+                  <!--Content-->
+                  <h4 class="font-weight-bold">Expeient Health care</h4>
+                  <p>
+                    <i class="fas fa-quote-left "></i>I am very impressed with the AC service provided by this website. They are very professional and responsive in handling my AC issues. The technician sent was also highly experienced and efficient in making the repairs. I highly recommend their services to anyone in need of AC maintenance or repairs.
+                  </p>
+
+                  <!--Review-->
+                  <div class="green-text">
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star-half-alt"> </i>
+                  </div>
+                </div>
+              </div>
+              <!--/First column-->
+
+              <!--Second column-->
+              <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
+                <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto mb-4">
+                    <img  style="height: 250px;" src="data:image/png;base64,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" class="rounded-circle img-fluid z-depth-1-half">
+                  </div>
+
+                  <!--Content-->
+                  <h4 class="font-weight-bold">TJ Impex Jwel Fine LLP</h4>
+                  <p>
+                    <i class="fas fa-quote-left"></i>I was truly impressed with the AC service on this website. They responded to my request very quickly, and within a short time, a skilled technician came to my home and repaired my AC excellently. I am very happy with the results and will definitely use their services again in the futur</p>
+
+                  <!--Review-->
+                  <div class="green-text">
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                  </div>
+                </div>
+              </div>
+              <!--/Second column-->
+
+              <!--Third column-->
+              <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
+                <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto mb-4">
+                    <img style="height: 250px;" src="data:image/jpeg;base64,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" class="rounded-circle img-fluid z-depth-1-half">
+                  </div>
+                  <!--Content-->
+                  <h4 class="font-weight-bold">Bodo Moller</h4>
+                  <p>
+                    <i class="fas fa-quote-left"></i>I am very satisfied with the AC service provided by this company. Their customer service is excellent, and the staff is very friendly. The technician sent to my home was highly knowledgeable and clearly explained what was being done. I highly recommend this company for anyone in need of reliable and professional AC services.
+                  </p>
+
+                  <!--Review-->
+                  <div class="green-text">
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"> </i>
+                    <i class="far fa-star"> </i>
+                  </div>
+
+                </div>
+              </div>
+              <!--/Third column-->
+
+            </div>
+            <!--/First row-->
+          </div>
+
+      </section>
+      <!--/Section: Testimonials v.3-->
+
+    </div>
+      <!--Section: Content-->
+
+
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="text-center" id="service">
+        <h4 class="mb-5"><strong>SERVICES</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img style="height: 230px;" src="img/service1.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">AC (AIR CONDITIONER)</h5>
+                <p class="card-text">
+                  Trusted and Guaranteed AC Service in Mumbai
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                  Read More
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">AC SERVICE</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          <h1 align="center"><b>Trusted and Guaranteed AC Service in Mumbai</b></h1>
+                        </p>
+                        <p>We provide <u>AC repair services</u> specifically for the Mumbai area at affordable prices. King Service's AC services are guaranteed and of high quality. With experience in AC service since 2018, we ensure that your AC will be handled by the right technician.</p>
+                
+                        <p><br />
+                          We offer AC repair services for all AC brands, types (split AC, cassette AC, standing floor AC, central AC, etc.), and sizes of AC units.</p>
+                
+                        <h3><b><u>Our AC service includes:</u></b></h3>
+                
+                        <ul>
+                          <li>AC SERVICE / CLEANING</li>
+                          <li>FREON GAS RECHARGING R22 / R32 / R410</li>
+                          <li>AC INSTALLATION / REMOVAL</li>
+                          <li>WELDING LEAKS / REPLACING U-TUBE PIPE</li>
+                          <li>REPLACING OUTDOOR VALVE</li>
+                          <li>REPLACING BEARING</li>
+                          <li>REPLACING RUNNING CAPACITOR</li>
+                          <li>REPLACING STARTING CAPACITOR</li>
+                          <li>REPLACING COMPRESSOR</li>
+                          <li>REPLACING INDOOR FAN MOTOR</li>
+                          <li>REPLACING OUTDOOR FAN MOTOR</li>
+                          <li>REPLACING RUNNING FAN</li>
+                          <li>REPLACING FAN / BLOWER</li>
+                          <li>REPLACING OVERLOAD PROTECTOR</li>
+                          <li>AC SPARE PART REPLACEMENT</li>
+                          <li>PCB REPAIR</li>
+                          <li>COPPER PIPE INSTALLATION</li>
+                          <li>ELECTRICAL WIRING</li>
+                          <li>AC REMOTE CONTROL</li>
+                          <li>WATER HOSE</li>
+                          <li>INSTALLATION OF OUTDOOR BRACKET</li>
+                          <li>BOLTS AND NUTS</li>
+                          <li>AND MORE</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img style="height: 230px;" src="data:image/jpeg;base64,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" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">AMC (Annual Maintenance Contract)</h5>
+                    <p class="card-text">
+                        Trusted and Guaranteed AMC Service in Mumbai
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                        Read More
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">AC SERVICE</h5>
+                                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        <h1 align="center"><b>Trusted and Guaranteed AC Service in Mumbai</b></h1>
+                                    </p>
+                                    <p>We provide <u>AC repair services</u> specifically for the Mumbai area at affordable prices. King Service's AC services are guaranteed and of high quality. With experience in AC service since 2018, we ensure that your AC will be handled by the right technician.</p>
+        
+                                    <p><br />
+                                        We offer AC repair services for all AC brands, types (split AC, cassette AC, standing floor AC, central AC, etc.), and sizes of AC units.</p>
+        
+                                    <h3><b><u>Our AC service includes:</u></b></h3>
+        
+                                    <ul>
+                                        <li>AC SERVICE / CLEANING</li>
+                                        <li>FREON GAS RECHARGING R22 / R32 / R410</li>
+                                        <li>AC INSTALLATION / REMOVAL</li>
+                                        <li>WELDING LEAKS / REPLACING U-TUBE PIPE</li>
+                                        <li>REPLACING OUTDOOR VALVE</li>
+                                        <li>REPLACING BEARING</li>
+                                        <li>REPLACING RUNNING CAPACITOR</li>
+                                        <li>REPLACING STARTING CAPACITOR</li>
+                                        <li>REPLACING COMPRESSOR</li>
+                                        <li>REPLACING INDOOR FAN MOTOR</li>
+                                        <li>REPLACING OUTDOOR FAN MOTOR</li>
+                                        <li>REPLACING RUNNING FAN</li>
+                                        <li>REPLACING FAN / BLOWER</li>
+                                        <li>REPLACING OVERLOAD PROTECTOR</li>
+                                        <li>AC SPARE PART REPLACEMENT</li>
+                                        <li>PCB REPAIR</li>
+                                        <li>COPPER PIPE INSTALLATION</li>
+                                        <li>ELECTRICAL WIRING</li>
+                                        <li>AC REMOTE CONTROL</li>
+                                        <li>WATER HOSE</li>
+                                        <li>INSTALLATION OF OUTDOOR BRACKET</li>
+                                        <li>BOLTS AND NUTS</li>
+                                        <li>AND MORE</li>
+                                    </ul>
+        
+                                    <h3><b><u>AMC (Annual Maintenance Contract)</u></b></h3>
+                                    <p>We also offer an Annual Maintenance Contract (AMC) for your AC units to ensure long-term, hassle-free operation. Our AMC includes:</p>
+        
+                                    <ul>
+                                        <li>Regular cleaning of both indoor and outdoor units.</li>
+                                        <li>Freon gas refilling as needed.</li>
+                                        <li>Checking and maintaining all components to prevent future issues.</li>
+                                        <li>Priority service for emergency repairs.</li>
+                                        <li>Discounts on spare parts and labor charges.</li>
+                                        <li>Guaranteed satisfaction with periodic service checks.</li>
+                                    </ul>
+        
+                                    <p>With our AMC, you can ensure that your AC runs smoothly throughout the year without any sudden breakdowns, saving you both time and money.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img style="height: 230px;" src="img/service2.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">REPAIR AC</h5>
+                <p class="card-text">
+                  "For the Mumbai  and its surroundings"
+
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+                  Read More
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Repair AC</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p><strong>Best AC Service in Jabodetabek</strong></p>
+                        <ul>
+                          <li>Experienced and professional technicians.</li>
+                          <li>Technicians are equipped with complete tools.</li>
+                          <li>Only for split-type AC units.</li>
+                          <li>30-day warranty for AC repair, 14-day warranty for AC installation/removal, and 7-day warranty for AC cleaning.</li>
+                          <li>Warranty ONLY applies to orders made through the Seekmi website or app.</li>
+                          <li>Free insurance available for non-cash payments.</li>
+                          <li>We only select the most qualified technicians to ensure excellent service quality. Your satisfaction is our top priority.</li>
+                          <li>Hassle-free experience, handled by our professional and friendly customer service team available 7 days a week.</li>
+                        </ul>
+                        <p><strong>Notice</strong><br />
+                        Your order will be automatically canceled within 24 hours if our customer service is unable to reach you by phone for verification and scheduling.</p>
+                        <p>Please do not give permission for the technician to take the AC unit outside your residence for any reason.</p>
+                        <p>Please contact Seekmi Customer Service to inquire about the cost of replacing AC components.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img style="height: 230px;" src="img/service3.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Clean AC</h5>
+                <p class="card-text">
+                  Trust Us with Various Types of AC Services
+
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+                  Read More
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel3">Service Cuci AC</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">AC cleaning, both for the indoor and outdoor units, is necessary to keep your AC free of dust. Accumulated dust can reduce the cooling efficiency of the AC and also pollute the air in the room. Make sure to service and clean your AC every 3-4 months.
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <!-- <section class="mb-5">
+        <h4 class="mb-5 text-center"><strong>Facilis consequatur eligendi</strong></h4>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <!-- 2 column grid layout with text inputs for the first and last names 
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">First name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email input 
+              <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email address</label>
+              </div>
+
+              <!-- Password input 
+              <div class="form-outline mb-4">
+                <input type="password" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Password</label>
+              </div>
+
+              <!-- Checkbox 
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" checked />
+                <label class="form-check-label" for="form2Example3">
+                  Subscribe to our newsletter
+                </label>
+              </div>
+
+              <!-- Submit button 
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Sign up
+              </button>
+
+              <!-- Register buttons 
+              <div class="text-center">
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> -->
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+  <section class="text-center" id="contact">
+    <h4 class="mb-5"><strong>CONTACT</strong></h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="contact-grid1">
+          <img src="img/contact.jpg" width="300" height="210">
+          <br>
+          <span style="font-weight: bold;">Mohammad Shameem</span>
+        <p>New business, general and press.</p>
+        <span style="font-weight: bold;">+917408381814</span>
+        <p>Feel free to give us a call.</p>
+        <!-- <span style="font-weight: bold;">Careers@ac.agency</span>
+        <p>If you wish to join us.</p> -->
+        <span style="font-weight: bold;">Location</span>
+        <p> Office Number 3, Kothari Compound, Noori Manzil Khairani Road, Sakinaka Andheri East,
+          Mumbai, Maharashtra, 400072</p>
+        </div>
+        
+      </div>
+      <div class="col-md">
+        <form action="" class="contact-form" id="contact-form">
+          <!-- 2 column grid layout with text inputs for the first and last names -->
+          <div class="row mb-4">
+            <div class="col">
+              <div class="form-outline">
+                <input type="text" id="first_name" class="form-control" />
+                <label class="form-label" for="form6Example1">Name</label>
+              </div>
+            </div>
+           
+          </div>
+        
+          <!-- Text input -->
+        
+        
+          <!-- Text input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="address" class="form-control" />
+            <label class="form-label" for="form6Example4">Address</label>
+          </div>
+        
+          <!-- Email input -->
+          
+        
+          <!-- Number input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="phone" class="form-control" />
+            <label class="form-label" for="form6Example6">Phone</label>
+          </div>
+        
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea class="form-control" id="message" rows="4"></textarea>
+            <label class="form-label" for="form6Example7">Message</label>
+          </div>
+        
+          <!-- Submit button -->
+          <button type="submit"  value="Send" id="send-btn" class="btn btn-primary btn-block mb-4">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <!--Footer-->
+  <footer class="text-center text-lg-start">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between ">
+      <!-- Left -->
+      <!-- <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div> -->
+      <!-- Left -->
+
+      <!-- Right -->
+      <!-- <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+      <!-- Right -->
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-user me-3"></i>Hind Cool Service
+            </h6>
+            <p>
+              Office Number 3, Kothari Compound, Noori Manzil Khairani Road, Sakinaka Andheri East,
+              Mumbai, Maharashtra, 400072
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <!-- <div class="ratio ratio-1x1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.432086671616!2d106.92343631471655!3d-6.206597395506961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698bcabb1368d7%3A0xea46dd080cc5e54c!2sSMKN%2069%20JAKARTA%20TIMUR!5e0!3m2!1sid!2sid!4v1661244323398!5m2!1sid!2sid"
+                frameborder="0" style="border: 0; width: 240px; height: 250px;" allowfullscreen></iframe>
+            </div> -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Service</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Shop</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-school me-3"></i> Mumbai</p>
+            <p>
+              <i class="fas fa-envelope me-2"></i>
+              khanshameem74083@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 91 7408381814</p>
+            <p><i class="fas fa-print me-3"></i> + 91 7408381814</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <!-- <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div> -->
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6239994aa34c2456412c4137/1fuoftjul';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- Email Js Link -->
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<!-- Sweet Alert Js Link -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+(function () {
+  emailjs.init("U_KaU_VE8WLjUAdJW"); // You will use your email js api key here
+})();
+</script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
